@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Orbitron&family=Inter&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Fredoka", "sans-serif"; 
+}
