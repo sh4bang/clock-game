@@ -52,7 +52,7 @@ const InputNumberControl = ({ value, onChange, min, max, step, placeholder }) =>
             <input
                 type="text"
                 value={value}
-                className="font-bold text-l border-x-0 bg-gray-50 border-gray-300 h-11 text-center text-gray-900 focus:ring-blue-500 focus:border-4 focus:outline-blue-500 focus:border-blue-500 block w-full py-2.5"
+                className="font-bold text-l border-y-1 bg-gray-50 border-gray-300 h-11 text-center text-gray-900 focus:ring-blue-500 focus:border-4 focus:outline-blue-500 focus:border-blue-500 block w-full py-2.5"
                 onChange={(e) => onChange(Number(e.target.value))}
                 min={min}
                 max={max}

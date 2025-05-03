@@ -55,7 +55,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col">
       {/* Navigation bar */}
       <Header />
 
@@ -65,7 +65,7 @@ function App() {
         <OptionMenu mode={mode} onChangeMode={onChangeMode} onChangeDifficulty={onChangeDifficulty} />
 
         {/* Contenu principal */}
-        <main className="bg-neutral-500 flex-1 flex flex-col items-center justify-center p-6">
+        <main className="bg-neutral-200 flex-1 flex flex-col items-center justify-center p-6">
           <div className="w-100 h-100 mb-8">
             <Clock date={date} />
           </div>

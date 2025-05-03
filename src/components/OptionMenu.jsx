@@ -5,25 +5,30 @@ const OptionMenu = ({mode, onChangeMode, onChangeDifficulty}) => {
     const {difficulty} = useContext(GameContext);
 
     return (
-        <aside className="w-64 bg-white p-4 shadow">
-          <h2 className="font-semibold mb-2">Options de jeu</h2>
+        <aside className="w-64 bg-white p-4 inset-shadow-sm inset-shadow-gray-200">
+          <h2 className="text-gray-900 font-bold text-center text-xl pt-2 pb-8">Options de jeu</h2>
+          
           <div className="space-y-2">
-            <p className="font-bold text-blue-700">Mode de jeu :</p>
-            <select value={mode} onChange={onChangeMode} className="w-full border rounded p-1">
+
+            <label htmlFor="game-mode" className="block text-sm font-medium text-gray-900">Mode de jeu</label>
+            <select id="game-mode" value={mode} onChange={onChangeMode} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
               <option value="live">Heure courante</option>
               <option value="read-time">Lire l'heure</option>
             </select>
-            <p className="font-bold text-blue-700">Difficulté :</p>
-            <select value={difficulty} onChange={onChangeDifficulty} className="w-full border rounded p-1">
+
+            <label htmlFor="game-difficulty" className="block text-sm font-medium text-gray-900">Difficulté</label>
+            <select id="game-difficulty" value={difficulty} onChange={onChangeDifficulty} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
               <option value="beginner">Débutant</option>
               <option value="normal">Moyen</option>
               <option value="expert">Expert</option>
             </select>
-            <p className="font-bold text-blue-700">Format :</p>
-            <select className="w-full border rounded p-1">
+
+            <label htmlFor="game-clock-format" className="block text-sm font-medium text-gray-900">Format</label>
+            <select id="game-clock-format" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
               <option>Format 12h</option>
               <option>Format 24h</option>
             </select>
+
           </div>
         </aside>
     )

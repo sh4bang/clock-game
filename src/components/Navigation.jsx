@@ -1,10 +1,10 @@
 const Navigation = () => {
     return (
-        <nav className="space-x-4">
-          <a href="#" className="text-blue-600">Règles</a>
-          <a href="#" className="text-blue-600">Changer la langue</a>
-          <a href="#" className="text-blue-600">Défis</a>
-          <a href="#" className="text-blue-600">Connexion</a>
+        <nav className="space-x-5">
+          <a href="#" className="font-medium text-grey-900">Règles</a>
+          <a href="#" className="font-medium text-grey-900">Changer la langue</a>
+          <a href="#" className="font-medium text-grey-900">Défis</a>
+          {/* <a href="#" className="font-medium text-grey-900">Connexion</a> */}
         </nav>
     )
 }
